@@ -1,0 +1,7 @@
+[theme]
+base="dark"
+primaryColor="#1f77b4"
+backgroundColor="#0a0f3d"  # dark navy
+secondaryBackgroundColor="#1a1f40"
+textColor="#f0f2f6"
+font="sans serif"
