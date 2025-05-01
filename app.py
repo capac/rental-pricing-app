@@ -73,6 +73,20 @@ amenity_3 = st.selectbox(
      'Education', 'Religion', 'Home Improvement']
     )
 
+crime_rates = {
+    'Barking and Dagenham': 115.58, 'Barnet': 89.86, 'Bexley': 86.95,
+    'Brent': 117.59, 'Bromley': 88.26, 'Camden': 108.07,
+    'City of London': 28.93, 'Croydon': 111.91, 'Ealing ': 103.37,
+    'Enfield': 104.58, 'Greenwich': 121.4, 'Hackney': 140.13,
+    'Hammersmith and Fulham': 103.14, 'Haringey': 133.11,
+    'Harrow': 79.15, 'Havering': 99.07, 'Hillingdon': 95.3,
+    'Hounslow': 102.7, 'Islington': 114.9, 'Kensington and Chelsea4': 118.02,
+    'Kingston upon Thames': 75.43, 'Lambeth': 137.98, 'Lewisham': 134.35,
+    'Merton': 82.49, 'Newham': 142.35, 'Redbridge': 101.74,
+    'Richmond upon Thames': 71.78, 'Southwark': 116.55, 'Sutton': 79.67,
+    'Tower Hamlets': 98.6, 'Waltham Forest': 112.25, 'Wandsworth': 106.6,
+    'Westminster': 132.94}
+
 
 def prepare_features():
     input_dict = {
@@ -81,6 +95,7 @@ def prepare_features():
         'bathrooms': bathrooms,
         'bedrooms': bedrooms,
         'minimum_nights': minimum_nights,
+        'crime_rates': crime_rates[borough],
         'distance_to_station': distance_to_station,
         'amenity_1': amenity_1,
         'amenity_2': amenity_2,
