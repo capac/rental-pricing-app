@@ -1,3 +1,4 @@
+import re
 import streamlit as st
 import joblib
 import numpy as np
@@ -90,7 +91,7 @@ crime_rates = {
 
 def prepare_features():
     input_dict = {
-        'borough': borough,
+        'borough': re.sub(r'\s', r'_', borough),
         'property_type': property_type,
         'bathrooms': bathrooms,
         'bedrooms': bedrooms,
