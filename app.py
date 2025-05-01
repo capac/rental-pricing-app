@@ -34,7 +34,7 @@ bathrooms = st.number_input(
     'Number of bathrooms', min_value=0, max_value=20, value=1, step=1
     )
 minimum_nights = st.number_input(
-    'Minimum nights stay', min_value=30, max_value=999, value=3, step=1
+    'Minimum nights stay', min_value=30, max_value=999, value=30, step=1
     )
 borough = st.selectbox(
     'London borough',
