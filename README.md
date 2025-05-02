@@ -1,0 +1,7 @@
+# Short-Term Rental Price Estimator for London UK properties
+
+![](london-properties.jpg "london-properties.jpg")
+
+Use this Streamlit web app to estimate the short-term rental nightly price of your property based on its characteristics and location in London UK, and according to the number of bedrooms and bathrooms, number of required minimum nights of stay, borough of the property location, local amenities in the vicinity of the property and distance of the property to the nearest Tube station. Short-term rentals are those where the minimum nights stay is greater than 30 days.
+
+[Short-Term Rental Price Estimator &bull; Streamlit](https://rental-pricing-app.streamlit.app/ "https://rental-pricing-app.streamlit.app/")
