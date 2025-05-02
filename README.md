@@ -1,4 +1,4 @@
-# Short-Term Rental Price Estimator for London UK properties
+# Short-Term Rental Price Estimator for London UK Properties
 
 ![](london-properties.jpg "london-properties.jpg")
 
@@ -9,3 +9,5 @@ Use this Streamlit web app to estimate the short-term rental nightly price of yo
 The data used for the web app refers to December 2024.
 
 [Short-Term Rental Price Estimator &bull; Streamlit](https://rental-pricing-app.streamlit.app/ "https://rental-pricing-app.streamlit.app/")
+
+For a full explanation of the data analysis, see [Project on short term rentals in London UK &bull; GitHub](https://github.com/capac/short-term-rents-in-london "https://github.com/capac/short-term-rents-in-london").
