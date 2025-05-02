@@ -16,9 +16,13 @@ st.title('Short-Term Rental Price Estimator')
 st.write(
     'Use this tool to estimate the short-term rental nightly '
     'price of your property based on its characteristics and '
-    'location in London, UK. Short-term rentals are those '
-    'where the minimum nights stay is greater than 30 days.'
+    'location in London, UK.'
     )
+st.write(
+    '**Short-term rentals are those where the nights stay is from '
+    '30 days to 999 days. The data set used for modeling is from '
+    'December 2024.**'
+)
 
 property_type = st.selectbox(
     'Property type',
