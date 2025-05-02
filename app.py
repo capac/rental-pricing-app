@@ -43,15 +43,16 @@ minimum_nights = st.number_input(
     )
 borough = st.selectbox(
     'London borough',
-    ['Lambeth', 'Kensington and Chelsea', 'Brent', 'Westminster',
-     'Hammersmith and Fulham', 'Islington', 'Hackney', 'Camden',
-     'Wandsworth', 'Southwark', 'Haringey', 'Hounslow', 'Tower Hamlets',
-     'Barnet', 'Richmond upon Thames', 'Enfield', 'Newham',
-     'Kingston upon Thames', 'Lewisham', 'Harrow', 'Croydon',
-     'Greenwich', 'Merton', 'Ealing', 'Bromley', 'City of London',
-     'Waltham Forest', 'Hillingdon', 'Bexley', 'Havering', 'Redbridge',
-     'Barking and Dagenham']
+    ['Barking_and_Dagenham', 'Barnet', 'Bexley', 'Brent',
+     'Bromley', 'Camden', 'City_of_London', 'Croydon', 'Ealing',
+     'Enfield', 'Greenwich', 'Hackney', 'Hammersmith_and_Fulham',
+     'Haringey', 'Harrow', 'Havering', 'Hillingdon', 'Hounslow',
+     'Islington', 'Kensington_and_Chelsea', 'Kingston_upon_Thames',
+     'Lambeth', 'Lewisham', 'Merton', 'Newham', 'Redbridge',
+     'Richmond_upon_Thames', 'Southwark', 'Tower_Hamlets',
+     'Waltham_Forest', 'Wandsworth', 'Westminster']
      )
+
 distance_to_station = st.slider(
     'Distance to nearest station (km)',
     min_value=0.0, max_value=20.0, value=0.5, step=0.1
