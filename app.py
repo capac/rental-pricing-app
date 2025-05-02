@@ -12,15 +12,16 @@ def load_model():
 
 model = load_model()
 
-st.title('London Short-Term Rental Price Estimator')
+st.title('Short-Term Rental Price Estimator')
 st.write(
-    'Use this tool to estimate the nightly price '
-    'of your rental property based on its characteristics '
-    'and location in London.'
+    'Use this tool to estimate the short-term rental nightly '
+    'price of your property based on its characteristics and '
+    'location in London, UK. Short-term rentals are those '
+    'where the minimum nights stay is greater than 30 days.'
     )
 
 property_type = st.selectbox(
-    'Property Type',
+    'Property type',
     ['Entire rental unit', 'Entire townhouse', 'Entire condo',
      'Entire serviced apartment', 'Entire guest suite',
      'Entire loft', 'Entire home', 'Entire guesthouse',
@@ -53,21 +54,21 @@ distance_to_station = st.slider(
     )
 
 amenity_1 = st.selectbox(
-    'Nearby amenity 1',
+    'First nearby amenity',
     ['Grocery Store', 'Restaurant', 'Cafe', 'Nightlife', 'Retail',
      'Fitness', 'Wellness', 'Entertainment', 'Cultural', 'Outdoor',
      'Transport', 'Healthcare', 'Services', 'Organization',
      'Education', 'Religion', 'Home Improvement']
     )
 amenity_2 = st.selectbox(
-    'Nearby amenity 2',
+    'Second nearby amenity',
     ['Grocery Store', 'Restaurant', 'Cafe', 'Nightlife', 'Retail',
      'Fitness', 'Wellness', 'Entertainment', 'Cultural', 'Outdoor',
      'Transport', 'Healthcare', 'Services', 'Organization',
      'Education', 'Religion', 'Home Improvement']
     )
 amenity_3 = st.selectbox(
-    'Nearby amenity 3',
+    'Third nearby amenity',
     ['Grocery Store', 'Restaurant', 'Cafe', 'Nightlife', 'Retail',
      'Fitness', 'Wellness', 'Entertainment', 'Cultural', 'Outdoor',
      'Transport', 'Healthcare', 'Services', 'Organization',
