@@ -21,7 +21,7 @@ st.write(
 
 st.write(
     '**Short-term rentals are those where the nights stay is from '
-    '1 day to 999 days. The data set used for modeling is from '
+    '1 to 999 days. The data set used for modeling is from '
     'December 2024.**'
 )
 
@@ -42,7 +42,7 @@ room_type = st.selectbox(
     ['Entire home/apt', 'Private room'])
 
 accommodates = st.number_input(
-    'Number of people property can accommodate', min_value=0,
+    'Number of people the property can accommodate', min_value=0,
     max_value=20, value=1, step=1
     )
 
