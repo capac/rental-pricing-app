@@ -20,7 +20,7 @@ st.write(
     )
 
 st.write(
-    '**Short-term rentals are those where the nights stay is from '
+    '**Short-term rentals are those where the overnight stay is from '
     '1 to 999 days. The data set used for modeling is from '
     'December 2024.**'
 )
@@ -71,8 +71,9 @@ availability_365 = st.slider(
     min_value=0, max_value=365, value=0, step=1
     )
 
-days_from_last_review = st.slider(
-    'Days from last review (maximum 6 months)',
+days_from_last_review = st.st.number_input(
+    'Days from last review (maximum 182 days, equivalent to almost 6 months). '
+    'Use maximum value if no reviews have been made.',
     min_value=0, max_value=182, value=0, step=1
     )
 
@@ -82,7 +83,7 @@ distance_to_station = st.slider(
     )
 
 first_amenity = st.selectbox(
-    'First nearby amenity',
+    'First nearby amenity category',
     ['Dining and Drinking', 'Community and Government', 'None',
      'Health and Medicine', 'Arts and Entertainment', 'Retail',
      'Business and Professional Services', 'Landmarks and Outdoors',
@@ -90,7 +91,7 @@ first_amenity = st.selectbox(
     )
 
 second_amenity = st.selectbox(
-    'Second nearby amenity',
+    'Second nearby amenity category',
     ['Dining and Drinking', 'Community and Government', 'None',
      'Health and Medicine', 'Arts and Entertainment', 'Retail',
      'Business and Professional Services', 'Landmarks and Outdoors',
@@ -98,7 +99,7 @@ second_amenity = st.selectbox(
     )
 
 third_amenity = st.selectbox(
-    'Third nearby amenity',
+    'Third nearby amenity category',
     ['Dining and Drinking', 'Community and Government', 'None',
      'Health and Medicine', 'Arts and Entertainment', 'Retail',
      'Business and Professional Services', 'Landmarks and Outdoors',
