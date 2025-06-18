@@ -71,7 +71,7 @@ availability_365 = st.slider(
     min_value=0, max_value=365, value=0, step=1
     )
 
-days_from_last_review = st.st.number_input(
+days_from_last_review = st.number_input(
     'Days from last review (maximum 182 days, equivalent to almost 6 months). '
     'Use maximum value if no reviews have been made.',
     min_value=0, max_value=182, value=0, step=1
