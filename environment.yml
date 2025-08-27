@@ -1,0 +1,13 @@
+name: rental-pricing-app
+channels:
+  - defaults
+  - conda-forge
+  - https://repo.anaconda.com/pkgs/main
+  - https://repo.anaconda.com/pkgs/r
+dependencies:
+  - scikit-learn
+  - python=3.12
+  - pandas
+  - streamlit
+  - numpy
+prefix: /opt/miniconda3/envs/rental-pricing-app
