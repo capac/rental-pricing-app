@@ -7,7 +7,7 @@ channels:
 dependencies:
   - scikit-learn=1.6.1
   - python=3.12
-  - pandas
-  - streamlit
-  - numpy
+  - pandas=2.3.3
+  - streamlit=1.52.2
+  - numpy=2.3.5
 prefix: /opt/miniconda3/envs/rental-pricing-app
