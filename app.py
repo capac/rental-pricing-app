@@ -20,8 +20,9 @@ st.write(
     )
 
 st.write(
-    '**Short-term rentals are those where the overnight stay is from '
-    '1 to 999 days. The data set used for modeling is from '
+    '**Because of planning regulations in the Greater London area, '
+    'short-term rentals are those where the overnight stay is from '
+    '1 to 90 days. The data set used for modeling is from 11 '
     'December 2024.**'
 )
 
